@@ -43,10 +43,10 @@ export default function App() {
 
         {Object.keys(cep).length > 1 && (
           <main className="main">
-            <h2>CEP: {cep.cep}</h2>
+            <h2> {cep.cep}</h2>
             <span> {cep.logradouro}</span>
             <span>{cep.complemento}</span>
-            <span>BAIRRO:{cep.bairro}</span>
+            <span>{cep.bairro}</span>
             <span>
               {cep.localidade} - {cep.uf}
             </span>
