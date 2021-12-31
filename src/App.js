@@ -41,15 +41,17 @@ export default function App() {
           </button>
         </div>
 
-        <main className="main">
-          <h2>CEP: {cep.cep}</h2>
-          <span> {cep.logradouro}</span>
-          <span>{cep.complemento}</span>
-          <span>BAIRRO:{cep.bairro}</span>
-          <span>
-            {cep.localidade} - {cep.uf}
-          </span>
-        </main>
+        {Object.keys(cep).length > 1 && (
+          <main className="main">
+            <h2>CEP: {cep.cep}</h2>
+            <span> {cep.logradouro}</span>
+            <span>{cep.complemento}</span>
+            <span>BAIRRO:{cep.bairro}</span>
+            <span>
+              {cep.localidade} - {cep.uf}
+            </span>
+          </main>
+        )}
       </div>
     </>
   );
